@@ -1,0 +1,139 @@
+
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .grid-container>div {
+            font-size: 30px;
+            /* outline: 3px solid rgb(10, 28, 226); */
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+        }
+
+        /* .menu-bar {
+            display: none !important;
+        } */
+
+        body{
+            background-image: url(ohh.jpg);
+             background-size: cover;
+             background-repeat: no-repeat;
+        }
+
+        .navbar {
+            grid-column: 1/11;
+            padding: 20px;
+            background-color:none;
+            color: aliceblue;
+
+            ul {
+                /* background-color: rgb(25, 0, 254);
+                border-radius: 40px;
+                padding: 20px; */
+                float: right;
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+
+            }
+/* 
+            li:nth-child(1) {
+                position: absolute;
+                left: 0;
+            } */
+
+            li {
+                padding-inline: 20px;
+            }
+
+            a {
+                font-size: 2.5rem;
+                font-family: inria, serif ;
+                font-weight: 700;
+                text-decoration: none;
+                color:  rgb(255, 187, 0);
+                font-style: italic ;
+                font-weight: inherit;
+            }
+
+             #logo:hover {
+                /* background-color: rgb(208, 255, 1);
+                color: rgb(197, 15, 15);    
+                font-size: 3rem;
+                transform: scale(2.1);
+                
+                padding: 20px;
+             */
+
+            #logo {
+                font-family: Georgia, serif ;
+                position: absolute;
+                left: 0;
+                border-radius: 40px;
+                transition: 0.4s ease-in-out;
+                background-color:  rgb(255, 187, 0);
+            }
+
+            #menu {
+                display: none;
+            }
+        }
+    }
+
+        .image-section {
+            grid-column: 1/5;
+            text-align: center;
+            padding: 4rem 0px 0px 0px;
+
+            img {
+                border-radius: 70%;
+                width: 330px;
+                height: 330px;
+                object-fit:cover;
+                
+        }
+    }
+
+        .text-section {
+            /* padding: 80px 0px 0px 5%; */
+            grid-column: 1/11;
+            display: grid;
+            
+        
+
+            ul {
+            
+                list-style: none;
+                text-align: center;
+            
+            }
+
+            li:nth-child(1) {
+             
+               color:  rgb(255, 187, 0);
+                font-size: 5rem;
+                font-style: italic;
+                 font-family: inria, serif ;
+                
+               
+            }
+        }
+
+            /* li:nth-child(2) {
+                font-weight: inherit;
+                font-style: italic;
+               font-family: inria, serif ;
+                color:  rgb(255, 187, 0);
+            }
+        } */
+
+        .footer {
+            grid-column: 1/11;
+            height: 10vh;
+        }
+ 
